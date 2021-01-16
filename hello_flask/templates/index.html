@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rachel</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>    
+<body>
+        <h1>Hi {{greeting}}</h1>
+        <p>My favorite food is pancakes!</p>
+        <img src="https://lilluna.com/wp-content/uploads/2018/05/bacon-pancakes-resize-5.jpg">
+        <hr>
+        <h2>Friends</h2>
+        <ol>
+            {% for friends in friends %}
+            <li>{{friends}}</li>
+            {% endfor %}
+        </ol>
+
+</body>
+</html>

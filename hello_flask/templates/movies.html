@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/movies.css">
+    </head>
+    <body>
+        <h1>Here are your movie results:</h1>
+
+        {% for result in results %}
+            <div class = "movie div">
+                <h3>{{result['title]}</h3>
+                <p>Year released: {{result['year']}}</p>
+
+                <!-- Handled the cases where cast information isn't provided-->
+                {% if result['cast'] == [] %}
+                    <p>Cast info N/A</p>
+                {% else %}
+                    <p>Cast: {{result['cast']}}</p>
+                {% endif %}
+         
+            </div>    
+    </body>
+</html>
