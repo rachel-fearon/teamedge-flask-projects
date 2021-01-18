@@ -40,6 +40,10 @@ def all_movies():
 
 @app.route('/movies/search_title', methods=['GET'])
 def search_title():
+    json_info = ''
+    movies_path = os.path.join(app.static_folder, 'data', 'movies.json')
+    with open(movies_path, 'r') as raw_json:
+        json_info = json.load(raw_json)
     results = []
     if 'title' in request.args:
         title = request.args['title']

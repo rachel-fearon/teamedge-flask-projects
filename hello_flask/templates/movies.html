@@ -16,7 +16,15 @@
                 {% else %}
                     <p>Cast: {{result['cast']}}</p>
                 {% endif %}
+
+                 <!-- Handled the cases where genres information isn't provided-->
+                 {% if result['genres'] == [] %}
+                 <p>Genre info N/A</p>
+                {% else %}
+                    <p>Genre: {{result['genres']}}</p>
+                {% endif %}
          
             </div>    
+            {% endfor %}
     </body>
 </html>
