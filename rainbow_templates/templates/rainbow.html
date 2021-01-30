@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <title>Rachel's rainbow</title>
+</head>
+<body>
+    <ul>
+        {% for color in colors %}
+            {% set link ='http://0.0.0.0:5000/' + color %}
+        <h1>{{ color }}</h1>
+        <li><a href ={{link}}>{{color}}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
