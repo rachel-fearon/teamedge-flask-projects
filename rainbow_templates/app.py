@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/rainbow')
 def rainbow():
     colors = ['red', 'orange', 'yellow', 'blue', 'green', 'blue', 'indigo', 'violet']
-    return render_template('rainbow.html', colors = colors)
+    return render_template('rainbows.html', colors = colors)
 
 @app.route('/red')
 def red():
