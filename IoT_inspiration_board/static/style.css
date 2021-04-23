@@ -1,7 +1,9 @@
 body {
-    background: lightblue;
-}
-
-head {
-    color: plum;
+    background: plum;
+    border-radius: 20 px;
+    border: 2px rgb(155, 121, 106);
+    margin: 50 px;
+    padding: 18px;
+    width: 180px;
+    height: 300px;
 }
